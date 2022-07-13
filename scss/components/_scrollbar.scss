@@ -1,0 +1,23 @@
+@mixin scrollbar {
+    cursor: pointer;
+
+    &.active {
+        cursor: grab;
+    }
+
+    scrollbar-width: auto;
+    scrollbar-color: $gold;
+
+    &::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $gold;
+        border-radius: 10px;
+    }
+}

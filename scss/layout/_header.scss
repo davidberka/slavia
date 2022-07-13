@@ -1,0 +1,31 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    overflow: hidden;
+
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: max-content;
+    height: 100vh;
+    background: $primary;
+    transform: translateX(-110%);
+    transition: transform .2s ease-out;
+
+    &.active {
+        transform: translateX(0);
+    }
+
+    .nav-link {
+        list-style: none;
+        font-size: 2rem;
+        font-family: 'Slavia Headline Semibold', sans-serif;
+        color: #fff;
+        cursor: pointer;
+    }
+}

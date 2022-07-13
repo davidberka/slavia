@@ -1,0 +1,25 @@
+footer {
+    position: relative;
+    color: #fff;
+    background-image: url('../images/pozadi.png');
+    background-position: center;
+    background-size: cover;
+
+    @include media-breakpoint-up(mega) {
+        background-image: none;
+        padding-top: 12rem;
+    }
+}
+
+.footer-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+ 
+.footer-right-col {
+    @include media-breakpoint-up(lg) {
+        border-left: 1px solid #fff;
+    }
+}

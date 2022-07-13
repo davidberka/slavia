@@ -1,0 +1,79 @@
+.accordion-item {
+    &.open {
+        .accordion-button {
+            background: url('../images/sede_pozadi.png') no-repeat;
+            background-size: cover;
+
+            h3 {
+                color: $black;
+            }
+
+            svg {
+                transform: rotate(-90deg);
+                fill: $primary;
+            }
+        }
+
+        .accordion-content {
+            height: auto;
+            padding: 1rem;
+
+            @include media-breakpoint-up(md) {
+                padding: 2rem;
+            }
+        }
+    }
+
+    .accordion-button {
+        background: none;
+        border: none;
+        background: url('../images/cervene_pozadi.png') no-repeat;
+        background-size: cover;
+        width: 100%;
+        text-align: left;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all .2s ease-out;
+
+        h3 {
+            color: #fff;
+            transition: color .2s ease-out;
+        }
+    
+        svg {
+            height: 15px;
+            width: 35px;
+            min-width: 35px;
+            fill: #fff;
+            transition: all .2s ease-out;
+
+            @include media-breakpoint-up(md) {
+                height: 30px;
+                width: 50px;
+                min-width: 50px;
+            }
+        }
+    
+        @include media-breakpoint-up(md) {
+            padding: 1rem 2rem;
+        }
+    }
+    
+    .accordion-content {
+        background: #fff;
+        height: 0px;
+        overflow: hidden;
+        padding: 0 1rem;
+        transition: all .2s ease-out;
+    
+        @include media-breakpoint-up(md) {
+            padding: 0 2rem;
+
+            p {
+                width: 80%;
+            }
+        }
+    }
+}

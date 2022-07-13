@@ -1,0 +1,62 @@
+.hero-section {
+    position: relative;
+    padding-top: 75px;
+    height: 50vh;
+
+    @include media-breakpoint-up(md) {
+        height: 90vh;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-top: 90px;
+    }
+
+
+    .logo {
+        position: absolute;
+        right: 2.5rem;
+        top: 2.5rem;
+        height: 20vw;
+
+        img {
+            max-height: 100%;
+            width: auto;
+        }
+    }
+
+    .play-btn {
+        cursor: pointer;
+        z-index: 5;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.hero-video {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 6;
+    object-fit: cover;
+    
+    &.active {
+        display: block;
+    }
+}
+
+.aside-bg {
+    position: absolute;
+    left: 0;
+    top: 90vh;
+    height: 1325px;
+}

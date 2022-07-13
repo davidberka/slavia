@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="preload"
+      href="./fonts/Inter-Medium.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <style>
+      @font-face {
+        font-family: "Inter";
+        src: url("./fonts/Inter-Thin.ttf") format("truetype");
+        font-weight: 100;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Inter";
+        src: url("./fonts/Inter-Medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Inter";
+        src: url("./fonts/Inter-SemiBold.ttf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Slavia Headline Semibold";
+        src: url("./fonts/SlaviaHeadline-SemiBold-v2.otf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+
+    <title>Slavia - Nová identita</title>
+  </head>
+  <body>
+    <header class="px-12 px-md-5 pt-5 px-xl-7 pt-xl-7">
+      <button class="burger">
+        <!-- prettier-ignore -->
+        <svg width="60" height="42" viewBox="0 0 60 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="3.5" x2="60" y2="3.5" stroke="#40403F" stroke-width="7"/>
+          <line y1="20.6428" x2="60" y2="20.6428" stroke="#40403F" stroke-width="7"/>
+          <line y1="37.7856" x2="60" y2="37.7856" stroke="#40403F" stroke-width="7"/>
+        </svg>
+      </button>
+      <nav class="navigation">
+        <ul class="vstack gap-5 justify-content-center h-100 px-7">
+          <li id="sl_1" class="nav-link">Hvězda ve znaku</li>
+          <li id="sl_2" class="nav-link">Logo</li>
+          <li id="sl_3" class="nav-link">Písmo</li>
+          <li id="sl_4" class="nav-link">Fanshop</li>
+          <li id="sl_5" class="nav-link">Historie loga</li>
+          <li id="sl_6" class="nav-link">FAQ</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="logo">
+          <img
+            loading="lazy"
+            src="./images/logo2.png"
+            alt=""
+            width="197"
+            height="219"
+          />
+        </div>
+        <img
+          class="aside-bg d-none d-mega-block"
+          src="./images/sipky_vlevo.png"
+          alt=""
+        />
+        <video class="hero-video" controls></video>
+        <div class="container">
+          <h1 class="hero-heading text-primary mt-3 mt-md-0">
+            Ve znaku hvězda je
+          </h1>
+          <button class="play-btn">Play button</button>
+        </div>
+        <div>
+          <img
+            loading="lazy"
+            class="position-absolute top-100 start-50 translate-middle"
+            style="z-index: 1"
+            src="./images/1892.png"
+            alt=""
+          />
+          <img
+            loading="lazy"
+            class="position-absolute bottom-0 w-100"
+            src="./images/foto_stadion.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="position-relative py-5 py-xl-88" style="z-index: 1">
+        <div class="container text-center">
+          <h2 class="mb-5 mb-xl-6 mx-auto" style="max-width: 20ch">
+            Slavia v novém, a přesto důvěrně známá
+          </h2>
+          <p class="mb-5 mb-xl-6">
+            Letos slavíme 130 let od svého založení a spolu s tím představujeme
+            moderní vizuální identitu a nové logo. Nové, a zároveň takové, jaké
+            tu s námi bylo od samého začátku. Neexistuje nic, co by náš klub
+            reprezentovalo víc. Nic, co by lépe znali fanoušci po celém světě.
+            Neexistuje nic slávističtějšího, než je červená pěticipá hvězda
+            směřující jedním hrotem dolů.
+          </p>
+          <p>
+            Dosavadní logo jsme používali 26 let. Měli jsme ho rádi, ale
+            jednoduše už nevyhovovalo současným trendlům ve vizuální prezentaci
+            fotbalových klubů. Spolu s grafickým studiem Touch Branding jsme
+            proto vytvořili logo nové a kolem něj vystavěli komplexní vizuální
+            identitu včetně unikátního písma, která bude prezentaci klubu v
+            následujících sezonách provázet.
+          </p>
+        </div>
+      </section>
+
+      <section id="s_1">
+        <div class="container">
+          <div class="row position-relative">
+            <div class="col-9 col-md-6 mx-auto mb-5 mb-md-0">
+              <img loading="lazy" src="./images/foto_cyklisti.png" alt="" />
+            </div>
+            <div class="content-rectangle content-rectangle-left"></div>
+            <div
+              class="col-md-6 mt-5 mt-xl-80 px-xl-6"
+              style="height: max-content; z-index: 2"
+            >
+              <h2 class="text-primary mb-3 mb-xl-4 mw-xl-10">
+                Ve znaku hvězda je
+              </h2>
+              <p class="mb-3" style="max-width: 50ch">
+                Červená hvězda s jedním hrotem směřujícím dolů je se Slavií
+                spjatá od počátku její existence a tvoří tak základní symbol
+                našeho klubu. Už první sportovci, ketrými byli cyklisé, nosili
+                bílá trička s pěticípou hvězdou. A do bílé poloviny svých dresů
+                si tento znak našili i fotbalisté. Dali tak vzniknout unikátnímu
+                propojení, ketré přetrvalo dodnes. Když Slavia vzkvétala, hvězda
+                zářila. V časech nejtěžších zapadala a znovu se objevovala, aby
+                povznesla mysl těch, kteří ji nosí.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="jersey-history-section py-5 py-md-9 py-xl-88">
+        <img
+          class="jersey-history-bg d-none d-md-block"
+          src="./images/pozadi.png"
+          alt=""
+        />
+        <img
+          class="jersey-history-img d-none d-md-block"
+          src="./images/historicke-foto.png"
+          alt=""
+        />
+        <div class="d-none d-md-block">
+          <div id="i_0" class="jersey-img active">
+            <img loading="lazy" src="./images/dresy/18.png" alt="" />
+          </div>
+          <div id="i_1" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/17.png" alt="" />
+          </div>
+          <div id="i_2" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/16.png" alt="" />
+          </div>
+          <div id="i_3" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/15.png" alt="" />
+          </div>
+          <div id="i_4" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/14.png" alt="" />
+          </div>
+          <div id="i_5" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/13.png" alt="" />
+          </div>
+          <div id="i_6" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/12.png" alt="" />
+          </div>
+          <div id="i_7" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/11.png" alt="" />
+          </div>
+          <div id="i_8" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/10.png" alt="" />
+          </div>
+          <div id="i_9" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/9.png" alt="" />
+          </div>
+          <div id="i_10" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/8.png" alt="" />
+          </div>
+          <div id="i_11" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/7.png" alt="" />
+          </div>
+          <div id="i_12" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/6.png" alt="" />
+          </div>
+          <div id="i_13" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/5.png" alt="" />
+          </div>
+          <div id="i_14" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/4.png" alt="" />
+          </div>
+          <div id="i_15" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/3.png" alt="" />
+          </div>
+          <div id="i_16" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/2.png" alt="" />
+          </div>
+          <div id="i_17" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/1.png" alt="" />
+          </div>
+        </div>
+        <div class="container position-relative" style="z-index: 1">
+          <div class="content-rectangle content-rectangle-right"></div>
+          <div
+            class="col-md-6 jersey-history-left-col mb-5 mb-md-0"
+            style="height: max-content"
+          >
+            <h2 class="mb-3 mb-xl-4 mw-xl-10 unselectable">
+              Historický vývoj dresu
+            </h2>
+            <div>
+              <p
+                id="t_0"
+                class="jersey-desc unselectable active"
+                style="max-width: 50ch"
+              >
+                Na hráběte Ericha Thurn-Taxise, průkopníka fotbalu u nás, si
+                slávisté hned pro své první zápasy zvolili po anglickém vzoru
+                tehdy oblíbený půlený trikot sešívaný ze dvou kusů látky. Když
+                došlo na barvy, padlo rozhodnutí na červenou a bílou - barvy
+                slovanské, české, národní. Bílá v podání Slavie symbolizuje
+                čistotu sportovní myšlenky a čestného boje, kdy protivník není
+                nepřítel, ale uznávaný soupeř. Červená je symbolem srdce, které
+                vkládáme do svých zápasů.
+              </p>
+              <p
+                id="t_1"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                První dresy si hráči šijí sami. Jde o bavlněné košile se
+                zapínáním na knoflíky (pokaždé jiné, jaké kdo zrovna sežene) a s
+                dlouhým rukávem, který si hráči ohrnují. Vpředu jsou dvě kapsy,
+                přičemž na té levé je vyšita velká hvězda. Límeček se připíná
+                knoflíky k dresu a jeho poloviny jsou v opačné barvě než
+                poloviny košile. Tedy většinou, někteří hráči si ho z
+                roztržitosti přišijí opačně.
+              </p>
+              <p
+                id="t_2"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                Košile už nejsou celé propínací, knoflíky končí zhruba v úrovni
+                žaludku. Límce jsou už všechny v opačné barvě, než je
+                přiléhající polovina dresu, a nemají knoflíky. Hvězda na dresu
+                má různé podoby, někdy je baculatější, někdy má úzké dlouhé
+                cípy. Často se mění i v průběhu jedné sezony.
+              </p>
+              <p
+                id="t_3"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                Výrazně se zkracuje výstřih a počet knoflíků, bílý podklad pod
+                knoflíky dál zasahuje do červené poloviny. V tomto dresu Slavia
+                odehraje svou nejúspěšnější éru. Devětkrát se stane mistrem
+                ligy, třikrát vyhraje domácí pohár a v roce 1938 triumfuje ve
+                Středoevropském poháru – tehdejší obdobě Ligy mistrů.
+              </p>
+              <p
+                id="t_4"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                V 50. letech klub přichází o své jméno i o tradiční dresy.
+                Červenou hvězdu nahrazuje rudá, otočená dvěma cípy dolů, s
+                nášivkou DSO Dynamo, v roce 1953 dokonce jen písmeno „D“
+                reprezentující nový, ideologicky nezávadný název. Sešívané dresy
+                navíc nejsou k dostání, a tak po červeno-modré epizodě hrajeme
+                celí v modrém nebo ve žlutém. Trvá to skoro tři roky…
+              </p>
+              <p
+                id="t_5"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                Návrat ke klasice přichází v roce 1956, kdy Slavia navzdory
+                zákazu nastupuje v červenobílé kombinaci na Velikonočnímu
+                turnaji na Letné. Dresy dlouho schovávané před vlastními
+                funkcionáři přinesou úspěch. Sešívaní turnaj vyhrávají a jedno
+                oko přítomných fanoušků nezůstává suché.
+              </p>
+              <p
+                id="t_6"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                Poprvé z dresu mizí límeček, který nahrazuje kulatý bílý lem
+                kolem krku. Pryč jsou tím pádem i knoflíčky, na levé ruce pro
+                změnu zdobí okraj červeného rukávu bílý lem.
+              </p>
+              <p
+                id="t_7"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                Na scénu přichází Puma. Výroby dresů se vůbec poprvé zhostí
+                německá značka, která do červené poloviny umístí svoje logo, v
+                této době ovšem natočené hlavou směrem k hvězdě. Vrací se
+                límeček, celý bílý, rukávy zdobí výrazné pruhy v červené a bílé
+                barvě od ramene po okraj.
+              </p>
+              <p
+                id="t_8"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                Po více jak deseti letech různých variant dresu Puma přichází
+                krátké období dodavatele Hi-Tec. Ten připravuje dres s bílým
+                límečkem a značkou výrobce vklíněnou mezi horní dva cípy hvězdy.
+                Vůbec poprvé se na slávistickém dresu objevuje logo sponzora. Je
+                jím výrobce spotřební chemie Henkel.
+              </p>
+              <p
+                id="t_9"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                S Borisem Korbelem přichází anglická značka Matchwinner s asi
+                nejobskurnějším dresem, který kdy Slavia nosila. Kromě výrazných
+                pruhů na ramenou připomínajících ptačí pera zaujme především
+                „rozplývající se“ předěl mezi červenou a bílou polovinou nebo
+                černé logo výrobce mezi horními cípy hvězdy.
+              </p>
+              <p
+                id="t_10"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                Doslova ikonický dres spojený s titulem v roce 1996. Hlavního
+                sponzora Benzinu doplňuje kulaté logo Volkswagen na červené
+                polovině naproti hvězdě. Typické tři pruhy značky Adidas na
+                ramenou končí nad rukávy a ty jsou tak bez jakékoli další
+                ozdoby, výrazný límeček střídá bílou a červenou barvu nad
+                opačnými polovinami dresu.
+              </p>
+              <p
+                id="t_11"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                Poslední dres od firmy Adidas po dvanácti letech spolupráce.
+                Hvězda se výrazně zmenšila, zato přibyly výrazné lemy na obou
+                rukávech v kontrastní barvě nebo tři pruhy po celé délce rukávu.
+                Vše doplňuje jednobarevné logo sponzora ČSA.
+              </p>
+              <p
+                id="t_12"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                První dres od dalšího anglického výrobce Umbro se stává svědkem
+                dvou titulů i účasti v Lize mistrů. Hvězda zůstává menší, mizí i
+                náznak límečku a červenou polovinu zdobí tenká linka od krku až
+                ke spodnímu okraji. Jeho nejvýraznějším prvkem je ale bílý pruh
+                uprostřed červené poloviny, který vyplňuje logo sponzora.
+              </p>
+              <p
+                id="t_13"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                Retro look symbolizovaný maximální jednoduchostí spojenou s
+                výrazným límečkem a knoflíčkem s drobnými červenými písmeny. Nad
+                hvězdou v levé polovině se poprvé objevuje zlatá hvězdička
+                symbolizující deset sešívaných titulů.
+              </p>
+              <p
+                id="t_14"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                Poslední dres od Umbra s náznakem límečku, kde bílá barva
+                přesahuje do červené poloviny. Hvězda za deset titulů je
+                stříbrná a viditelná tak pouze zblízka. Pravý rukáv zdobí nápis
+                Umbro, jinak je dres prost jakýchkoli dalších ozdob.
+              </p>
+              <p
+                id="t_15"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                Puma se vrací, poprvé s konzervativním designem, hned další
+                sezonu ale se vzorem orloje v červené polovině dresu, která tak
+                působí tmavší než obvykle, a s výraznými pruhy na ramenou. První
+                dres zažije Ligu mistrů i 20. titul, ten druhý tak můžou nad
+                červenou hvězdou ozdobit hned dvě hvězdy zlaté.
+              </p>
+              <p
+                id="t_16"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                Další design od značky Puma, který přináší něco, co tu ještě
+                nebylo. Tentokrát jde o přidání modré barvy – loga Puma a
+                tenkého lemu na ramenou a lemu na konci rukávů. S tímto dresem
+                slávisté dojdou do čtvrtfinále vůbec prvního ročníku Konferenční
+                ligy UEFA.
+              </p>
+              <p
+                id="t_17"
+                class="jersey-desc unselectable"
+                style="max-width: 50ch"
+              >
+                Klub slaví 130 let a spolu s tím přichází další z dresů, které
+                si budeme pamatovat. Tentokrát nejen kvůli revolučnímu lehkému
+                materiálu nebo obrázku bohyně Slavie na vnitřní straně za krkem,
+                ale hlavně kvůli absenci kontrastních rukávů – dres je tentokrát
+                složen ze dvou totožných polovin, které ohraničují pouze tenké
+                lemy na koncích rukávů.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex d-md-none justify-content-center mb-5">
+            <div id="im_0" class="jersey-img-mobile active">
+              <img loading="lazy" src="./images/dresy/18.png" alt="" />
+            </div>
+            <div id="im_1" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/17.png" alt="" />
+            </div>
+            <div id="im_2" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/16.png" alt="" />
+            </div>
+            <div id="im_3" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/15.png" alt="" />
+            </div>
+            <div id="im_4" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/14.png" alt="" />
+            </div>
+            <div id="im_5" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/13.png" alt="" />
+            </div>
+            <div id="im_6" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/12.png" alt="" />
+            </div>
+            <div id="im_7" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/11.png" alt="" />
+            </div>
+            <div id="im_8" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/10.png" alt="" />
+            </div>
+            <div id="im_9" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/9.png" alt="" />
+            </div>
+            <div id="im_10" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/8.png" alt="" />
+            </div>
+            <div id="im_11" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/7.png" alt="" />
+            </div>
+            <div id="im_12" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/6.png" alt="" />
+            </div>
+            <div id="im_13" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/5.png" alt="" />
+            </div>
+            <div id="im_14" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/4.png" alt="" />
+            </div>
+            <div id="im_15" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/3.png" alt="" />
+            </div>
+            <div id="im_16" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/2.png" alt="" />
+            </div>
+            <div id="im_17" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/1.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="jersey-date-container d-flex align-items-center justify-content-center mb-5 mb-md-0 p-2 bg-white"
+          >
+            <svg class="arrow-carousel prev">
+              <use
+                xlink:href="./images/arrow-carousel.svg#arrow-carousel"
+              ></use>
+            </svg>
+            <div class="mx-3">
+              <h2
+                id="d_0"
+                class="jersey-date active mb-0 text-primary text-center"
+              >
+                1896 - 1905 1
+              </h2>
+              <h2
+                id="d_1"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 2
+              </h2>
+              <h2
+                id="d_2"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 3
+              </h2>
+              <h2
+                id="d_3"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 4
+              </h2>
+              <h2
+                id="d_4"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 5
+              </h2>
+              <h2
+                id="d_5"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 6
+              </h2>
+              <h2
+                id="d_6"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 7
+              </h2>
+              <h2
+                id="d_7"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 8
+              </h2>
+              <h2
+                id="d_8"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 9
+              </h2>
+              <h2
+                id="d_9"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 10
+              </h2>
+              <h2
+                id="d_10"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 11
+              </h2>
+              <h2
+                id="d_11"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 12
+              </h2>
+              <h2
+                id="d_12"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 13
+              </h2>
+              <h2
+                id="d_13"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 14
+              </h2>
+              <h2
+                id="d_14"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 15
+              </h2>
+              <h2
+                id="d_15"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 16
+              </h2>
+              <h2
+                id="d_16"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 17
+              </h2>
+              <h2
+                id="d_17"
+                class="jersey-date unselectable mb-0 text-primary text-center"
+              >
+                1896 - 1905 18
+              </h2>
+            </div>
+            <svg class="arrow-carousel next">
+              <use
+                xlink:href="./images/arrow-carousel.svg#arrow-carousel"
+              ></use>
+            </svg>
+          </div>
+          <div class="d-md-none">
+            <img loading="lazy" src="./images/historicke-foto.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="s_2" class="py-9 py-xl-88">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <h1 class="text-primary mb-5 unselectable">Logo</h1>
+              <p class="unselectable">
+                Nové, moderní ale zároveň tradiční, jasně identifikované a
+                neodmyslitelně spjaté s klubem. Takové je naše logo, taková je
+                naše hvězda. Původně symbol panslavismu, tedy myšlenky propojení
+                všech slovanských národů, se v podání Slavie stal synonymem
+                stále nové naděje a silného ducha i v obdobích nezdaru a
+                neúspěchu. Základním logem je vertikální kombinace hvězdy, dvou
+                zlatých hvězdiček a wordmarku Slavia. Ve chvíli, kdy logo
+                používáme na méně kontrastním pozadí, tvoří jeho okraj bílý lem.
+                Jednoduché logo bez názvu klubu používáme v případech, kdy je
+                slovo Slavia obsaženo v související grafice a lze tedy
+                jednoznačně identifikovat, že se jedná o logo Slavie.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <video
+                class="logo-reveal-video"
+                src="./images/logo-reveal.mp4"
+                muted
+                autoplay
+                loop
+              ></video>
+            </div>
+            <!-- <div class="d-flex justify-content-center">
+              <a class="btn btn-primary" href="#"
+                >Vertikální verze
+                <svg>
+                  <use xlink:href="./images/arrow.svg#arrow"></use>
+                </svg>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray">
+        <div class="container">
+          <div class="row">
+            <div class="logo-variant py-5 col-md-6 col-xl-3">
+              <span>Úplné logo</span>
+              <img loading="lazy" src="./images/logo.png" width="197" alt="" />
+            </div>
+            <div class="logo-variant py-5 col-md-6 col-xl-3 bg-primary">
+              <span class="text-white border-white"
+                >Úplné logo na tmavém pozadí</span
+              >
+              <img loading="lazy" src="./images/logo1.png" width="197" alt="" />
+            </div>
+            <div class="logo-variant py-5 col-md-6 col-xl-3">
+              <span>Černobílé logo</span>
+              <img
+                loading="lazy"
+                src="./images/logo_black.png"
+                width="197"
+                alt=""
+              />
+            </div>
+            <div class="logo-variant py-5 col-md-6 col-xl-3">
+              <span>Zjednodušené logo</span>
+              <img loading="lazy" src="./images/logo3.png" width="197" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="s_3" class="py-9" style="overflow-x: hidden">
+        <div class="container">
+          <div class="row align-items-center gy-4">
+            <div class="col-xl-6">
+              <h1 class="text-primary mb-4">Písmo Slavia</h1>
+              <p>
+                Součástí nové identity je také originální písmo vytvořené přímo
+                pro Slavii. Duchovním otcem písma je Neil Johnston ze studia
+                Touch Branding, celou sadu pak dotvořili Martin Vácha a Daniel
+                Quisek z pražské písmolijny Displaay. Font Slavia Headline
+                vychází z fontu Wallop, ketrý je doplněn o hrot hvězdy v každém
+                z písmen s ostrou hranou. Specifickým znakem sady je pak samotná
+                slávistická hvězda vytvořená jako nový symbol, který je možné
+                napsat klávesovou zkratkou.
+              </p>
+            </div>
+            <div class="col-xl-6">
+              <h1 class="font-slavia-title ms-xl-9 ms-xxl-256">
+                <span>P</span><span>R</span>
+              </h1>
+            </div>
+            <div class="mt-xl-0">
+              <h2 class="text-center" style="word-break: break-all">
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="application-section pt-9 pt-xl-88"
+        style="overflow-x: hidden"
+      >
+        <img
+          loading="lazy"
+          class="application-bg"
+          src="./images/pozadi.png"
+          alt=""
+        />
+        <div class="container position-relative" style="z-index: 1">
+          <div class="row">
+            <div class="col-md-9 col-xl-6">
+              <h1 class="text-white mb-4">Aplikace a ukázky identity</h1>
+            </div>
+            <div class="col-md-3 col-xl-6">
+              <img
+                class="season-tickets-img"
+                src="./images/permice_bez_stinu.png"
+                alt=""
+              />
+            </div>
+            <div class="d-md-flex justify-content-between">
+              <img
+                loading="lazy"
+                class="bags-img"
+                src="./images/taska_bez_stinu.png"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                class="button-img mt-xxl-112"
+                src="./images/button.png"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                class="pen-img"
+                src="./images/pero_bez_stinu.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="identity-photos-section py-5 py-xl-88">
+        <div class="identity-photos-grid">
+          <div class="identity-photos-grid-item">
+            <img loading="lazy" src="./images/Vrstva_1.png" alt="" />
+          </div>
+          <div class="identity-photos-grid-item">
+            <img loading="lazy" src="./images/Vrstva_2.png" alt="" />
+          </div>
+          <div class="identity-photos-grid-item">
+            <img loading="lazy" src="./images/Vrstva_3.png" alt="" />
+          </div>
+          <div class="identity-photos-grid-item">
+            <img loading="lazy" src="./images/Vrstva_4.png" alt="" />
+          </div>
+          <div class="identity-photos-grid-item">
+            <img loading="lazy" src="./images/Vrstva_5.png" alt="" />
+          </div>
+          <div class="identity-photos-grid-item">
+            <img loading="lazy" src="./images/Vrstva_6.png" alt="" />
+          </div>
+          <div class="identity-photos-grid-item">
+            <img loading="lazy" src="./images/Vrstva_7.png" alt="" />
+          </div>
+          <div class="identity-photos-grid-item">
+            <img loading="lazy" src="./images/Vrstva_8.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="py-9 py-xl-88 mb-mega-352">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6">
+              <h1 class="text-primary mb-4">Další značky</h1>
+              <p class="mb-9">
+                V rámci nové identity vznikl i systém pro vytváření log dalších
+                aktivit spojených s klubem, který tak sjednocuje prezentaci
+                Slavie ve všech oblastech, kterým se věnujeme.
+              </p>
+            </div>
+            <div class="col-md-9 col-xl-6">
+              <div class="row gy-5">
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                  <img
+                    loading="lazy"
+                    class="pe-2 border-end border-2 border-primary"
+                    src="./images/logo2.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                  />
+                  <h2 class="mb-0 ps-2 text-uppercase text-primary">TV</h2>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                  <img
+                    loading="lazy"
+                    class="pe-2 border-end border-2 border-primary"
+                    src="./images/logo2.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                  />
+                  <h4
+                    class="mb-0 ps-2 text-uppercase text-primary"
+                    style="max-width: 11ch"
+                  >
+                    Business club
+                  </h4>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                  <img
+                    loading="lazy"
+                    class="pe-2 border-end border-2 border-primary"
+                    src="./images/logo2.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                  />
+                  <h2 class="mb-0 ps-2 text-uppercase text-primary">Esports</h2>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                  <img
+                    loading="lazy"
+                    class="pe-2 border-end border-2 border-primary"
+                    src="./images/logo2.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                  />
+                  <h4
+                    class="mb-0 ps-2 text-uppercase text-primary"
+                    style="max-width: 11ch"
+                  >
+                    Slavia pomáhá
+                  </h4>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                  <img
+                    loading="lazy"
+                    class="pe-2 border-end border-2 border-primary"
+                    src="./images/logo2.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                  />
+                  <h2 class="mb-0 ps-2 text-uppercase text-primary">Radio</h2>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                  <img
+                    loading="lazy"
+                    class="pe-2 border-end border-2 border-primary"
+                    src="./images/logo2.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                  />
+                  <h4
+                    class="mb-0 ps-2 text-uppercase text-primary"
+                    style="max-width: 11ch"
+                  >
+                    SK Slavia Praha - Fotbal A.S.
+                  </h4>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                  <img
+                    loading="lazy"
+                    class="pe-2 border-end border-2 border-primary"
+                    src="./images/logo2.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                  />
+                  <h2 class="mb-0 ps-2 text-uppercase text-primary">Ženy</h2>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                  <img
+                    loading="lazy"
+                    class="pe-2 border-end border-2 border-primary"
+                    src="./images/logo2.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                  />
+                  <h4
+                    class="mb-0 ps-2 text-uppercase text-primary"
+                    style="max-width: 11ch"
+                  >
+                    Akademie SK Slavia Praha
+                  </h4>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                  <img
+                    loading="lazy"
+                    class="pe-2 border-end border-2 border-primary"
+                    src="./images/logo2.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                  />
+                  <h2 class="mb-0 ps-2 text-uppercase text-primary">Mládež</h2>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                  <img
+                    loading="lazy"
+                    class="pe-2 border-end border-2 border-primary"
+                    src="./images/logo2.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                  />
+                  <h4
+                    class="mb-0 ps-2 text-uppercase text-primary"
+                    style="max-width: 16ch"
+                  >
+                    Tréninkové centrum horní Měcholupy
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="s_4" class="fanshop-section py-5 py-xl-9">
+        <img
+          loading="lazy"
+          class="fanshop-bg d-none d-mega-block"
+          src="./images/fanshop-bg.png"
+          alt=""
+        />
+        <div class="container position-relative" style="z-index: 1">
+          <div class="row align-items-center">
+            <div class="fanshop-text col-xl-6">
+              <img
+                loading="lazy"
+                class="mb-2 ms-1"
+                src="./images/proslavisty.png"
+                width="252"
+                height="46"
+                alt=""
+              />
+              <h1 class="text-white mb-4">Fanshop Slavia</h1>
+              <p class="text-white">
+                Suvenýry s novým logem si už teď můžete pořídit ve slávistickém
+                fanshopu. Další produkty budou přibývat během sezony.
+              </p>
+            </div>
+            <div class="fanshop-tshirt col-9 col-xl-6 mx-auto py-5">
+              <img
+                loading="lazy"
+                src="./images/triko_bez_stinu.png"
+                width="850"
+                height="935"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="fanshop-grid mb-5 mb-xl-9">
+          <div class="fanshop-grid-item">
+            <img loading="lazy" src="./images/fanshop_1.png" alt="" />
+          </div>
+          <div class="fanshop-grid-item">
+            <img loading="lazy" src="./images/fanshop_2.png" alt="" />
+          </div>
+          <div class="fanshop-grid-item">
+            <img loading="lazy" src="./images/fanshop_3.png" alt="" />
+          </div>
+          <div class="fanshop-grid-item">
+            <img loading="lazy" src="./images/fanshop_4.png" alt="" />
+          </div>
+          <div class="fanshop-grid-item">
+            <img loading="lazy" src="./images/fanshop_5.png" alt="" />
+          </div>
+          <div class="fanshop-grid-item">
+            <img loading="lazy" src="./images/fanshop_6.png" alt="" />
+          </div>
+          <div class="fanshop-grid-item">
+            <img loading="lazy" src="./images/fanshop_7.png" alt="" />
+          </div>
+          <div class="fanshop-grid-item">
+            <img loading="lazy" src="./images/fanshop_8.png" alt="" />
+          </div>
+        </div>
+        <div
+          class="d-flex justify-content-center position-relative"
+          style="z-index: 1"
+        >
+          <a
+            class="btn btn-white"
+            href="https://www.proslavisty.cz/"
+            target="_blank"
+            >Navštívit fanshop
+            <svg>
+              <use xlink:href="./images/arrow.svg#arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="py-9 py-xl-88 position-relative" style="z-index: 1">
+        <div id="s_5" class="container">
+          <div class="pb-9 pb-xl-88">
+            <h2 class="mb-5 mb-xl-6 text-center">Historie loga</h2>
+            <p class="mb-5 mb-xl-6 text-center mx-auto w-md-75">
+              Nejstarší znak klubu vychází z kulatého razítka Literárního a
+              řečnického spolku Slavia v Praze. Kruhový tvar je doplněn dalšími
+              dvěma symboly spolku - lipovými ratolestmi a slovanskou
+              trikolórou. Půlené logo s hvězdou na bílém poli používá klub v
+              různých obměnách od sedmdesátých let. V letech devadesátých jeho
+              horní polovině dominovala zlatá koruna tvořená lipovými listy,
+              současné logo využívá klub od roku 1996.
+            </p>
+            <div class="row g-4 g-xxl-9">
+              <div class="logo-history-item col-6 col-md-4 col-lg-3">
+                <img
+                  loading="lazy"
+                  src="./images/sportovni_klub_v_praze.jpg"
+                  width="225"
+                  height="225"
+                  alt=""
+                />
+                <h4 class="bg-white px-3 mx-auto mb-0 mt-3 mt-xxl-4">
+                  1895 - 1948
+                </h4>
+              </div>
+              <div class="logo-history-item col-6 col-md-4 col-lg-3">
+                <img
+                  loading="lazy"
+                  src="./images/zsj_dynamo_praha.jpg"
+                  width="225"
+                  height="225"
+                  alt=""
+                />
+                <h4 class="bg-white px-3 mx-auto mb-0 mt-3 mt-xxl-4">
+                  1949 - 1952
+                </h4>
+              </div>
+              <div class="logo-history-item col-6 col-md-4 col-lg-3">
+                <img
+                  loading="lazy"
+                  src="./images/tj_praha.jpg"
+                  width="225"
+                  height="225"
+                  alt=""
+                />
+                <h4 class="bg-white px-3 mx-auto mb-0 mt-3 mt-xxl-4">
+                  1958 - 1964
+                </h4>
+              </div>
+              <div class="logo-history-item col-6 col-md-4 col-lg-3">
+                <img
+                  loading="lazy"
+                  src="./images/sportovni_klub_v_praze.jpg"
+                  width="225"
+                  height="225"
+                  alt=""
+                />
+                <h4 class="bg-white px-3 mx-auto mb-0 mt-3 mt-xxl-4">
+                  1965 - 1973
+                </h4>
+              </div>
+              <div class="logo-history-item col-6 col-md-4 col-lg-3">
+                <img
+                  loading="lazy"
+                  src="./images/slavia_kopana.jpg"
+                  width="225"
+                  height="225"
+                  alt=""
+                />
+                <h4 class="bg-white px-3 mx-auto mb-0 mt-3 mt-xxl-4">
+                  1974 - 1990
+                </h4>
+              </div>
+              <div class="logo-history-item col-6 col-md-4 col-lg-3">
+                <img
+                  loading="lazy"
+                  src="./images/slavia_praha_fotbal.jpg"
+                  width="225"
+                  height="225"
+                  alt=""
+                />
+                <h4 class="bg-white px-3 mx-auto mb-0 mt-3 mt-xxl-4">
+                  1990 - 1996
+                </h4>
+              </div>
+              <div class="logo-history-item col-6 col-md-4 col-lg-3">
+                <img
+                  loading="lazy"
+                  src="./images/slavia_praha.jpg"
+                  width="225"
+                  height="225"
+                  alt=""
+                />
+                <h4 class="bg-white px-3 mx-auto mb-0 mt-3 mt-xxl-4">
+                  1996 - 2022
+                </h4>
+              </div>
+              <div class="logo-history-item col-6 col-md-4 col-lg-3">
+                <img
+                  loading="lazy"
+                  src="./images/logo2.png"
+                  width="254"
+                  height="254"
+                  alt=""
+                />
+                <h4 class="bg-white px-3 mx-auto mb-0 mt-3 mt-xxl-4">
+                  od 2022
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div id="s_6">
+            <h2 class="mb-5 mb-xl-6 text-center">Často kladené otázky</h2>
+            <p class="mb-5 mb-xl-6 text-center mx-auto w-md-75">
+              Zajímá vás něco v souvislosti se změnou loga a klubové vizuální
+              identity? Odpověď na vaši otázku možná najdete níže.
+            </p>
+
+            <div class="vstack gap-4">
+              <div class="accordion-item shadow">
+                <button class="accordion-button">
+                  <h3 class="mb-0 me-2">
+                    Proč ke změně loga dochází právě teď?
+                  </h3>
+                  <svg>
+                    <use
+                      xlink:href="./images/arrow.svg#arrow"
+                      width="100%"
+                      height="100%"
+                    ></use>
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Stávající logo klub používá od roku 1996 a intenzivní debata
+                    o jeho modernizaci a nové vizuální identitě tak probíhala
+                    minimálně posledních pět let. Během té doby vzniklo několik
+                    návrhů, ani jeden z nich ale vedení klubu nepřesvědčil.
+                    Intenzivní práce na současném návrhu trvala přes půl roku.
+                    Tato změna je návratem ke kořenům. Předchází oslavám 130 let
+                    od vzniku klubu, odpovídá současným grafickým trendům, a
+                    hlavně staví na původním symbolu klubu – tom nejcennějším,
+                    co Slavia má.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item shadow">
+                <button class="accordion-button">
+                  <h3 class="mb-0 me-2">
+                    Proč nové logo vypadá tak, jak vypadá?
+                  </h3>
+                  <svg>
+                    <use
+                      xlink:href="./images/arrow.svg#arrow"
+                      width="100%"
+                      height="100%"
+                    ></use>
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Hvězda je symbolem Slavie od samotného zrodu klubu a po
+                    většinu jeho historie byla také součástí znaku. Zároveň tu
+                    ale existoval určitý rozpor, kdy jsme byli jedním z mála
+                    klubů na světě, který na svém dresu neměl logo. Právě s
+                    dresy si přitom většina fanoušků doma i v zahraničí Slavii
+                    spojuje a otázkám na roli hvězdy čelili zástupci klubu snad
+                    na všech zahraničních výjezdech v posledních letech. Tento
+                    rozpor díky současné změně mizí a Slavia získává dokonale
+                    zapamatovatelné logo, aniž by se na unikátním dresu cokoli
+                    změnilo.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item shadow">
+                <button class="accordion-button">
+                  <h3 class="mb-0 me-2">
+                    Jaké varianty loga se budou používat?
+                  </h3>
+                  <svg>
+                    <use
+                      xlink:href="./images/arrow.svg#arrow"
+                      width="100%"
+                      height="100%"
+                    ></use>
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Nové logo existuje ve dvou variantách – s wordmarkem (tedy s
+                    názvem klubu „Slavia“) a bez něj. Logo bez wordmarku (tedy
+                    samotnou hvězdu s dvěma zlatými hvězdičkami) budeme primárně
+                    používat na místech, kde je název klubu uveden jinak
+                    (typicky například TV grafika). Variantu s wordmarkem pak
+                    budeme využívat tam, kde se jméno Slavia jinak neobjeví
+                    (typicky propagační předměty, billboardy apod.).
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item shadow">
+                <button class="accordion-button">
+                  <h3 class="mb-0 me-2">Kde všude se změna projeví?</h3>
+                  <svg>
+                    <use
+                      xlink:href="./images/arrow.svg#arrow"
+                      width="100%"
+                      height="100%"
+                    ></use>
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Od startu sezony 2022/23 by mělo být nové logo používáno
+                    všude, kde se bude mluvit o Slavii – tedy nejen v klubové
+                    komunikaci, ale také v médiích, v komunikaci UEFA nebo
+                    našich partnerů. Nejde ale zdaleka jen o logo. Prvky nové
+                    vizuální identity vycházející ze slávistické hvězdy se
+                    promítnou do každodenní komunikace klubu, webu, výzdoby
+                    stadionu nebo podoby suvenýrů ve fanshopu.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item shadow">
+                <button class="accordion-button">
+                  <h3 class="mb-0 me-2">
+                    Kdo je autorem nové vizuální identity, kdo se na její tvorbě
+                    podílel a kdo ji schválil?
+                  </h3>
+                  <svg>
+                    <use
+                      xlink:href="./images/arrow.svg#arrow"
+                      width="100%"
+                      height="100%"
+                    ></use>
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    S vytvořením identity bylo osloveno pražské grafické studio
+                    Touch Branding, a to na základě doporučení odborníků, kteří
+                    s klubem dlouhodobě spolupracují na jeho prezentaci a
+                    komunikaci. Samotný proces tvorby probíhal v úzké spolupráci
+                    s oddělením komunikace a oddělením marketingu Slavie. Návrhy
+                    byly průběžně připomínkovány a finálně schváleny vedením
+                    klubu.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item shadow">
+                <button class="accordion-button">
+                  <h3 class="mb-0 me-2">
+                    Proč klub platí za něco, co už vlastně bylo vymyšleno v
+                    předminulém století?
+                  </h3>
+                  <svg>
+                    <use
+                      xlink:href="./images/arrow.svg#arrow"
+                      width="100%"
+                      height="100%"
+                    ></use>
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Samotné logo je sice již existující symbol, kolem něj je ale
+                    vystavěna kompletní nová vizuální identita – tedy soubor
+                    pravidel a materiálů, které umožní jednotnou prezentaci
+                    klubu napříč všemi komunikačními kanály. Tvorba této
+                    identity tak, aby skutečně fungovala a aby s ní bylo možné
+                    bezproblémově pracovat, zabere řádově stovky hodin designérů
+                    a kreativců na straně studia a další stovky hodin práce lidí
+                    na straně klubu.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item shadow">
+                <button class="accordion-button">
+                  <h3 class="mb-0 me-2">
+                    Budu si moci ve fanshopu ještě koupit suvenýry se starým
+                    logem?
+                  </h3>
+                  <svg>
+                    <use
+                      xlink:href="./images/arrow.svg#arrow"
+                      width="100%"
+                      height="100%"
+                    ></use>
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Ano, půjde už ale pouze o doprodej stávajících skladových
+                    zásob. Zároveň jsou již v nabídce první suvenýry s novým
+                    logem a postupně se budou vyrábět další.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item shadow">
+                <button class="accordion-button">
+                  <h3 class="mb-0 me-2">
+                    Chtěl bych používat font Slavia Headline, je to možné?
+                  </h3>
+                  <svg>
+                    <use
+                      xlink:href="./images/arrow.svg#arrow"
+                      width="100%"
+                      height="100%"
+                    ></use>
+                  </svg>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Bohužel ne. Font je chráněným autorským dílem a licenci k
+                    jeho používání má v současnosti pouze klub.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img
+        loading="lazy"
+        class="footer-bg d-none d-mega-block"
+        src="./images/footer-bg.png"
+        alt=""
+      />
+      <div
+        class="container position-relative py-9 py-md-80 pt-mega-0"
+        style="z-index: 1"
+      >
+        <div class="row gy-4 gx-lg-4 gx-xxl-6">
+          <div class="col-lg-9 col-xl-10 vstack gap-3">
+            <p>
+              Copyright &copy; 2011-2022
+              <a class="text-white" href="https://slavia.cz" target="_blank"
+                ><strong>SK Slavia Praha</strong></a
+              >
+              &
+              <a
+                class="text-white"
+                href="https://esportsmedia.cz"
+                target="_blank"
+                ><strong>eSports.cz, s.r.o.</strong></a
+              >
+              &
+              <a class="text-white" href="#" target="_blank">JT Design</a>
+            </p>
+            <p>
+              Veškerý obsah stránek chráněn podle autorského zákona a jeho
+              přejímání bez výslovného souhlasu redakce je zakázáno.
+            </p>
+            <p>
+              Povolen je citace částí materiálů zde zveřejněných s uvedením
+              <strong>zdroje www.slavia.cz</strong>
+            </p>
+            <a class="text-white" href="#">Nastavení cookies</a>
+          </div>
+          <div class="col-lg-3 col-xl-2 footer-right-col">
+            <h5>SDÍLEJ STRÁNKU NA</h5>
+            <div class="d-flex gap-3">
+              <a class="text-decoration-none" href="#" target="_blank">
+                <!-- prettier-ignore -->
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="40" height="40" fill="#E40321"/>
+                  <path d="M26.1481 22.0625L26.8222 17.5381H22.6073V14.6021C22.6073 13.3643 23.196 12.1577 25.0838 12.1577H27V8.30566C27 8.30566 25.2611 8 23.5985 8C20.1274 8 17.8585 10.167 17.8585 14.0898V17.5381H14V22.0625H17.8585V33H22.6073V22.0625H26.1481Z" fill="white"/>
+                </svg>
+              </a>
+              <a class="text-decoration-none" href="#" target="_blank">
+                <!-- prettier-ignore -->
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="40" height="40" fill="#E40321"/>
+                  <path d="M30.3275 15.2336C30.344 15.4633 30.344 15.693 30.344 15.9227C30.344 22.9281 24.9823 31 15.1828 31C12.1637 31 9.35915 30.1304 7 28.6211C7.42895 28.6703 7.84135 28.6867 8.2868 28.6867C10.7779 28.6867 13.0711 27.85 14.9023 26.4227C12.5597 26.3734 10.5964 24.8477 9.92003 22.7477C10.25 22.7968 10.5799 22.8297 10.9264 22.8297C11.4048 22.8297 11.8833 22.764 12.3287 22.6492C9.88708 22.157 8.0558 20.0242 8.0558 17.4484V17.3828C8.76516 17.7766 9.59011 18.0227 10.4644 18.0554C9.02913 17.1039 8.08881 15.4797 8.08881 13.6422C8.08881 12.6578 8.35272 11.7554 8.81468 10.9679C11.4378 14.1836 15.3807 16.2835 19.802 16.5133C19.7195 16.1195 19.67 15.7094 19.67 15.2992C19.67 12.3789 22.0457 10 24.9987 10C26.533 10 27.9188 10.6398 28.8921 11.6734C30.0964 11.4438 31.2512 11.0008 32.2741 10.3938C31.8781 11.6242 31.0368 12.6578 29.9315 13.314C31.0038 13.1993 32.0432 12.9039 33 12.4938C32.2742 13.5437 31.3668 14.4788 30.3275 15.2336V15.2336Z" fill="white"/>
+                </svg>
+              </a>
+              <a class="text-decoration-none" href="#" target="_blank">
+                <!-- prettier-ignore -->
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="40" height="40" fill="#E40321"/>
+                  <path d="M20.5028 14.0903C16.9557 14.0903 14.0945 16.9521 14.0945 20.5C14.0945 24.0479 16.9557 26.9097 20.5028 26.9097C24.0499 26.9097 26.911 24.0479 26.911 20.5C26.911 16.9521 24.0499 14.0903 20.5028 14.0903ZM20.5028 24.6671C18.2105 24.6671 16.3366 22.7983 16.3366 20.5C16.3366 18.2017 18.205 16.3329 20.5028 16.3329C22.8006 16.3329 24.669 18.2017 24.669 20.5C24.669 22.7983 22.795 24.6671 20.5028 24.6671V24.6671ZM28.6679 13.8281C28.6679 14.6593 27.9986 15.3232 27.1732 15.3232C26.3422 15.3232 25.6785 14.6537 25.6785 13.8281C25.6785 13.0025 26.3477 12.3331 27.1732 12.3331C27.9986 12.3331 28.6679 13.0025 28.6679 13.8281ZM32.9122 15.3455C32.8173 13.3428 32.36 11.5688 30.8932 10.1073C29.432 8.64571 27.6584 8.18827 25.6562 8.08786C23.5926 7.97071 17.4074 7.97071 15.3438 8.08786C13.3472 8.1827 11.5736 8.64013 10.1068 10.1017C8.63999 11.5633 8.18823 13.3372 8.08784 15.3399C7.97072 17.4039 7.97072 23.5905 8.08784 25.6545C8.18265 27.6572 8.63999 29.4312 10.1068 30.8927C11.5736 32.3543 13.3416 32.8117 15.3438 32.9121C17.4074 33.0293 23.5926 33.0293 25.6562 32.9121C27.6584 32.8173 29.432 32.3599 30.8932 30.8927C32.3544 29.4312 32.8118 27.6572 32.9122 25.6545C33.0293 23.5905 33.0293 17.4095 32.9122 15.3455V15.3455ZM30.2462 27.8692C29.8112 28.9626 28.969 29.8049 27.8703 30.2456C26.225 30.8983 22.321 30.7477 20.5028 30.7477C18.6846 30.7477 14.775 30.8927 13.1352 30.2456C12.0421 29.8105 11.1999 28.9681 10.7593 27.8692C10.1068 26.2235 10.2574 22.3186 10.2574 20.5C10.2574 18.6814 10.1124 14.7709 10.7593 13.1308C11.1944 12.0374 12.0365 11.1951 13.1352 10.7544C14.7805 10.1017 18.6846 10.2523 20.5028 10.2523C22.321 10.2523 26.2306 10.1073 27.8703 10.7544C28.9635 11.1895 29.8056 12.0319 30.2462 13.1308C30.8988 14.7765 30.7482 18.6814 30.7482 20.5C30.7482 22.3186 30.8988 26.2291 30.2462 27.8692Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

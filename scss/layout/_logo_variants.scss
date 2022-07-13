@@ -1,0 +1,25 @@
+.logo-variant {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 170px;
+
+        @include media-breakpoint-up(md) {
+            width: 197px;
+        }
+    }
+
+    span {
+        display: block;
+        height: 80%;
+        padding: 0 4px;
+        position: absolute;
+        left: 0;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        text-align: right;
+        border-left: 1px solid $primary;
+    }
+}

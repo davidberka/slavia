@@ -1,0 +1,8 @@
+main {
+    background-image: url('../../images/hero-bg.png');
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-up(mega) {
+        background-size: 100% auto;
+    }
+}

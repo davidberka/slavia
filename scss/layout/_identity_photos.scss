@@ -1,0 +1,50 @@
+.identity-photos-section {
+    background-image: url('../images/identity-photos-bg.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.identity-photos-grid {
+    position: relative;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: "a a b b e e h h"
+                         "a a c d f g h h";
+    overflow-x: auto;
+    padding-bottom: 6px;
+    z-index: 1;
+
+    @include scrollbar;
+}
+                        
+.identity-photos-grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+
+    $letters: a, b, c, d, e, f, g, h;    
+
+    @each $current-letter in $letters {
+        $i: index($letters, $current-letter);
+
+        &:nth-child(#{$i}) {
+            grid-area: $current-letter;
+            min-width: 25vw;
+
+            @include media-breakpoint-up(xl) {
+                min-width: 20vw;
+            }
+        }
+    }
+
+    &:nth-child(1), &:nth-child(5) {
+        min-width: 40vw;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

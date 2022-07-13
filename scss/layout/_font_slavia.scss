@@ -1,0 +1,72 @@
+.font-slavia-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 10rem;
+    color: $primary;
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-up(xl) {
+        font-size: 35rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        font-size: 45rem;
+    }
+
+    span {
+        position: relative;
+    }
+
+    span:nth-child(1), span:nth-child(2) {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 1.33rem;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 15px 20px 0;
+            border-color: transparent $primary transparent transparent;
+
+            @include media-breakpoint-up(xl) {
+                top: 4.81rem;
+                left: .7rem;
+                border-width: 0 30px 60px 0;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                top: 6.15rem;
+                left: .8rem;
+                border-width: 0 40px 75px 0;
+            }
+        }
+    }
+
+    span:nth-child(1) {
+        &::after {
+            content: "";
+            position: absolute;
+            top: .5rem;
+            left: -.5rem;
+            height: 30px;
+            width: 30px;
+            border: 1px dashed $gold;
+            border-radius: 50%;
+
+            @include media-breakpoint-up(xl) {
+                height: 100px;
+                width: 100px;
+                top: 3rem;
+                left: -1.5rem;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                height: 120px;
+                width: 120px;
+                top: 3.75rem;
+                left: -1.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.application-section {
+    position: relative;
+
+    .pen-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 350px;
+    }
+
+    .button-img {
+        width: 350px;
+        object-fit: contain;
+    }
+
+    .bags-img {
+        width: 350px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .bags-img {
+            width: 50%;
+        }
+
+        .button-img {
+            width: 40%;
+        }
+
+        .pen-img {
+            width: 50%;
+        }
+    }
+
+    .season-tickets-img {
+        display: block;
+        margin: 0 auto;
+        height: 300px;
+
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            right: 0;
+            transform: translate(20vw, -5rem);
+            height: 400px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            transform: translate(10vw, -5rem);
+            height: 600px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            height: 700px;
+        }
+
+        @include media-breakpoint-up(mega) {
+            transform: translate(16vw, -5rem);
+        }
+    }
+}
+
+.application-bg {
+    position: absolute;
+    inset: 0;
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}

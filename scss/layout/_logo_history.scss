@@ -1,0 +1,69 @@
+.logo-history-item {
+    position: relative;
+
+    h4 {
+        position: relative;
+        width: max-content;
+        z-index: 1;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        height: 125px;
+        width: auto;
+
+        @include media-breakpoint-up(lg) {
+            height: 150px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            height: 225px;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &:not(:nth-child(even)) {
+            &::after {
+                content: "";
+                position: absolute;
+                height: 0px;
+                width: 175px;
+                border: 2px dashed $primary;
+                left: 50%;
+                bottom: .5rem;
+                width: 100%;
+            }
+        }
+    }
+
+    @include media-breakpoint-between(md, lg) {
+        &:not(:nth-child(3), :nth-child(6), :nth-child(8)) {
+            &::after {
+                content: "";
+                position: absolute;
+                height: 0px;
+                width: 175px;
+                border: 2px dashed $primary;
+                left: 50%;
+                bottom: .7rem;
+                width: 100%;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        &:not(:nth-child(4n)) {
+            &::after {
+                content: "";
+                position: absolute;
+                height: 0px;
+                width: 175px;
+                border: 2px dashed $primary;
+                left: 50%;
+                bottom: .7rem;
+                width: 100%;
+            }
+        }
+    }
+}
