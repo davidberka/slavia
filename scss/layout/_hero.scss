@@ -85,13 +85,27 @@
 
 .hero-video {
     display: block;
+    position: absolute;
+    inset: 0;
+    width: 350px;
+    height: 210px;
     object-fit: cover;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: min(90vw, 1000px);
-    height: auto;
+    // width: min(90vw, 1000px);
+    // height: auto;
+
+    @include media-breakpoint-up(md) {
+        width: 500px;
+        height: 295px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: 800px;
+        height: 460px;
+    }
 }
 
 .aside-bg {

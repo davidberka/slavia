@@ -11871,13 +11871,27 @@ main {
 
 .hero-video {
   display: block;
+  position: absolute;
+  inset: 0;
+  width: 350px;
+  height: 210px;
   object-fit: cover;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: min(90vw, 1000px);
-  height: auto;
+}
+@media (min-width: 768px) {
+  .hero-video {
+    width: 500px;
+    height: 295px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-video {
+    width: 800px;
+    height: 460px;
+  }
 }
 
 .aside-bg {

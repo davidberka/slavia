@@ -137,12 +137,8 @@ function heroVideoHandler() {
   const backdrop = document.querySelector(".backdrop");
   const closeBtn = document.querySelector(".close-btn");
 
-  const source = document.createElement("source");
-
   playBtn.addEventListener("click", () => {
-    source.setAttribute("src", "../images/hvezda.mp4");
-    video.appendChild(source);
-    video.play();
+    video.setAttribute("src", "https://www.youtube.com/embed/jQik1pyAAqs");
     videoModal.classList.add("active");
     body.classList.toggle("overflow");
   });
@@ -158,7 +154,7 @@ function heroVideoHandler() {
 function closeVideoModal(videoModal, video, body) {
   body.classList.remove("overflow");
   videoModal.classList.remove("active");
-  video.pause();
+  video.removeAttribute("src");
 }
 
 menuHandler();
