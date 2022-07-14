@@ -83,14 +83,35 @@
           src="./images/sipky_vlevo.png"
           alt=""
         />
-        <video class="hero-video" controls></video>
+        <div class="video-modal">
+          <div class="backdrop"></div>
+          <button class="close-btn">ZAVŘÍT</button>
+          <video class="hero-video" controls></video>
+        </div>
         <div class="container">
           <h1 class="hero-heading text-primary mt-3 mt-md-0">
             Ve znaku hvězda je
           </h1>
-          <button class="play-btn">Play button</button>
+          <button class="play-btn">
+            <img
+              class="mb-1"
+              src="./images/play-button.png"
+              width="140"
+              height="140"
+              alt=""
+            />
+            <span>PŘEHRÁT</span>
+          </button>
         </div>
         <div>
+          <img
+            loading="lazy"
+            class="position-absolute bottom-0 start-50"
+            src="./images/hraci.png"
+            alt=""
+            style="z-index: 2; transform: translateX(-50%)"
+            width="1425"
+          />
           <img
             loading="lazy"
             class="position-absolute top-100 start-50 translate-middle"
@@ -112,7 +133,7 @@
           <h2 class="mb-5 mb-xl-6 mx-auto" style="max-width: 20ch">
             Slavia v novém, a přesto důvěrně známá
           </h2>
-          <p class="mb-5 mb-xl-6">
+          <p class="mb-5 mb-xl-6 w-md-75 mx-auto">
             Letos slavíme 130 let od svého založení a spolu s tím představujeme
             moderní vizuální identitu a nové logo. Nové, a zároveň takové, jaké
             tu s námi bylo od samého začátku. Neexistuje nic, co by náš klub
@@ -120,7 +141,7 @@
             Neexistuje nic slávističtějšího, než je červená pěticipá hvězda
             směřující jedním hrotem dolů.
           </p>
-          <p>
+          <p class="w-md-75 mx-auto">
             Dosavadní logo jsme používali 26 let. Měli jsme ho rádi, ale
             jednoduše už nevyhovovalo současným trendlům ve vizuální prezentaci
             fotbalových klubů. Spolu s grafickým studiem Touch Branding jsme
@@ -173,46 +194,46 @@
         />
         <div class="d-none d-md-block">
           <div id="i_0" class="jersey-img active">
-            <img loading="lazy" src="./images/dresy/18.png" alt="" />
-          </div>
-          <div id="i_1" class="jersey-img">
-            <img loading="lazy" src="./images/dresy/17.png" alt="" />
-          </div>
-          <div id="i_2" class="jersey-img">
-            <img loading="lazy" src="./images/dresy/16.png" alt="" />
-          </div>
-          <div id="i_3" class="jersey-img">
-            <img loading="lazy" src="./images/dresy/15.png" alt="" />
-          </div>
-          <div id="i_4" class="jersey-img">
-            <img loading="lazy" src="./images/dresy/14.png" alt="" />
-          </div>
-          <div id="i_5" class="jersey-img">
             <img loading="lazy" src="./images/dresy/13.png" alt="" />
           </div>
+          <div id="i_1" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/8.png" alt="" />
+          </div>
+          <div id="i_2" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/18.png" alt="" />
+          </div>
+          <div id="i_3" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/17.png" alt="" />
+          </div>
+          <div id="i_4" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/11.png" alt="" />
+          </div>
+          <div id="i_5" class="jersey-img">
+            <img loading="lazy" src="./images/dresy/6.png" alt="" />
+          </div>
           <div id="i_6" class="jersey-img">
-            <img loading="lazy" src="./images/dresy/12.png" alt="" />
+            <img loading="lazy" src="./images/dresy/16.png" alt="" />
           </div>
           <div id="i_7" class="jersey-img">
-            <img loading="lazy" src="./images/dresy/11.png" alt="" />
+            <img loading="lazy" src="./images/dresy/15.png" alt="" />
           </div>
           <div id="i_8" class="jersey-img">
             <img loading="lazy" src="./images/dresy/10.png" alt="" />
           </div>
           <div id="i_9" class="jersey-img">
-            <img loading="lazy" src="./images/dresy/9.png" alt="" />
+            <img loading="lazy" src="./images/dresy/5.png" alt="" />
           </div>
           <div id="i_10" class="jersey-img">
-            <img loading="lazy" src="./images/dresy/8.png" alt="" />
+            <img loading="lazy" src="./images/dresy/14.png" alt="" />
           </div>
           <div id="i_11" class="jersey-img">
-            <img loading="lazy" src="./images/dresy/7.png" alt="" />
+            <img loading="lazy" src="./images/dresy/12.png" alt="" />
           </div>
           <div id="i_12" class="jersey-img">
-            <img loading="lazy" src="./images/dresy/6.png" alt="" />
+            <img loading="lazy" src="./images/dresy/9.png" alt="" />
           </div>
           <div id="i_13" class="jersey-img">
-            <img loading="lazy" src="./images/dresy/5.png" alt="" />
+            <img loading="lazy" src="./images/dresy/7.png" alt="" />
           </div>
           <div id="i_14" class="jersey-img">
             <img loading="lazy" src="./images/dresy/4.png" alt="" />
@@ -442,46 +463,46 @@
           </div>
           <div class="d-flex d-md-none justify-content-center mb-5">
             <div id="im_0" class="jersey-img-mobile active">
-              <img loading="lazy" src="./images/dresy/18.png" alt="" />
-            </div>
-            <div id="im_1" class="jersey-img-mobile">
-              <img loading="lazy" src="./images/dresy/17.png" alt="" />
-            </div>
-            <div id="im_2" class="jersey-img-mobile">
-              <img loading="lazy" src="./images/dresy/16.png" alt="" />
-            </div>
-            <div id="im_3" class="jersey-img-mobile">
-              <img loading="lazy" src="./images/dresy/15.png" alt="" />
-            </div>
-            <div id="im_4" class="jersey-img-mobile">
-              <img loading="lazy" src="./images/dresy/14.png" alt="" />
-            </div>
-            <div id="im_5" class="jersey-img-mobile">
               <img loading="lazy" src="./images/dresy/13.png" alt="" />
             </div>
+            <div id="im_1" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/8.png" alt="" />
+            </div>
+            <div id="im_2" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/18.png" alt="" />
+            </div>
+            <div id="im_3" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/17.png" alt="" />
+            </div>
+            <div id="im_4" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/11.png" alt="" />
+            </div>
+            <div id="im_5" class="jersey-img-mobile">
+              <img loading="lazy" src="./images/dresy/6.png" alt="" />
+            </div>
             <div id="im_6" class="jersey-img-mobile">
-              <img loading="lazy" src="./images/dresy/12.png" alt="" />
+              <img loading="lazy" src="./images/dresy/16.png" alt="" />
             </div>
             <div id="im_7" class="jersey-img-mobile">
-              <img loading="lazy" src="./images/dresy/11.png" alt="" />
+              <img loading="lazy" src="./images/dresy/15.png" alt="" />
             </div>
             <div id="im_8" class="jersey-img-mobile">
               <img loading="lazy" src="./images/dresy/10.png" alt="" />
             </div>
             <div id="im_9" class="jersey-img-mobile">
-              <img loading="lazy" src="./images/dresy/9.png" alt="" />
+              <img loading="lazy" src="./images/dresy/5.png" alt="" />
             </div>
             <div id="im_10" class="jersey-img-mobile">
-              <img loading="lazy" src="./images/dresy/8.png" alt="" />
+              <img loading="lazy" src="./images/dresy/14.png" alt="" />
             </div>
             <div id="im_11" class="jersey-img-mobile">
-              <img loading="lazy" src="./images/dresy/7.png" alt="" />
+              <img loading="lazy" src="./images/dresy/12.png" alt="" />
             </div>
             <div id="im_12" class="jersey-img-mobile">
-              <img loading="lazy" src="./images/dresy/6.png" alt="" />
+              <img loading="lazy" src="./images/dresy/9.png" alt="" />
             </div>
             <div id="im_13" class="jersey-img-mobile">
-              <img loading="lazy" src="./images/dresy/5.png" alt="" />
+              <img loading="lazy" src="./images/dresy/7.png" alt="" />
             </div>
             <div id="im_14" class="jersey-img-mobile">
               <img loading="lazy" src="./images/dresy/4.png" alt="" />
@@ -509,109 +530,109 @@
                 id="d_0"
                 class="jersey-date active mb-0 text-primary text-center"
               >
-                1896 - 1905 1
+                1896 - 1905
               </h2>
               <h2
                 id="d_1"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 2
+                1905 - 1931
               </h2>
               <h2
                 id="d_2"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 3
+                1932 - 1951
               </h2>
               <h2
                 id="d_3"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 4
+                1955
               </h2>
               <h2
                 id="d_4"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 5
+                1956 - 1964
               </h2>
               <h2
                 id="d_5"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 6
+                1972 - 1978
               </h2>
               <h2
                 id="d_6"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 7
+                1978 - 1980
               </h2>
               <h2
                 id="d_7"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 8
+                1986 - 1989
               </h2>
               <h2
                 id="d_8"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 9
+                1989 - 1991
               </h2>
               <h2
                 id="d_9"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 10
+                1992 - 1993
               </h2>
               <h2
                 id="d_10"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 11
+                1994 - 1996
               </h2>
               <h2
                 id="d_11"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 12
+                2005 - 2006
               </h2>
               <h2
                 id="d_12"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 13
+                2007 - 2008
               </h2>
               <h2
                 id="d_13"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 14
+                2010 - 2012
               </h2>
               <h2
                 id="d_14"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 15
+                2015 - 2019
               </h2>
               <h2
                 id="d_15"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 16
+                2020 - 2021
               </h2>
               <h2
                 id="d_16"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 17
+                2021 - 2022
               </h2>
               <h2
                 id="d_17"
                 class="jersey-date unselectable mb-0 text-primary text-center"
               >
-                1896 - 1905 18
+                2022 - 2023
               </h2>
             </div>
             <svg class="arrow-carousel next">

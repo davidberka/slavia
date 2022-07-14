@@ -1,7 +1,7 @@
 .hero-section {
     position: relative;
     padding-top: 75px;
-    height: 50vh;
+    height: 55vh;
 
     @include media-breakpoint-up(md) {
         height: 90vh;
@@ -9,6 +9,7 @@
 
     @include media-breakpoint-up(xl) {
         padding-top: 90px;
+        height: 95vh;
     }
 
 
@@ -28,30 +29,69 @@
         cursor: pointer;
         z-index: 5;
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: none;
+        border: none;
+        
+        img {
+            display: block;
+            box-shadow: 0 15px 15px white;
+            width: 80px;
+            height: 80px;
+
+            @include media-breakpoint-up(md) {
+                width: 140px;
+                height: 140px;
+            }
+        } 
+    }
+}
+
+.video-modal {
+    position: relative;
+    display: none;
+    z-index: 20;
+
+    &.active {
+        display: block;
+    }
+
+    .backdrop {
+        position: fixed;
+        inset: 0;
+        background: $black;
+        opacity: .5;
+        width: 100vw;
+        height: 100vh;
+        cursor: pointer;
+    }
+
+    .close-btn {
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: white;
+        position: fixed;
+        top: 2.5rem;
+        right: 2.5rem;
+        font-size: 1.5rem;
     }
 }
 
 .hero-video {
-    display: none;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    max-height: 100%;
-    max-width: 100%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: 6;
+    display: block;
     object-fit: cover;
-    
-    &.active {
-        display: block;
-    }
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(90vw, 1000px);
+    height: auto;
 }
 
 .aside-bg {

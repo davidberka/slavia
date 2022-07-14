@@ -11792,7 +11792,7 @@ main {
 .hero-section {
   position: relative;
   padding-top: 75px;
-  height: 50vh;
+  height: 55vh;
 }
 @media (min-width: 768px) {
   .hero-section {
@@ -11802,6 +11802,7 @@ main {
 @media (min-width: 1200px) {
   .hero-section {
     padding-top: 90px;
+    height: 95vh;
   }
 }
 .hero-section .logo {
@@ -11818,28 +11819,65 @@ main {
   cursor: pointer;
   z-index: 5;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+}
+.hero-section .play-btn img {
+  display: block;
+  box-shadow: 0 15px 15px white;
+  width: 80px;
+  height: 80px;
+}
+@media (min-width: 768px) {
+  .hero-section .play-btn img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.video-modal {
+  position: relative;
+  display: none;
+  z-index: 20;
+}
+.video-modal.active {
+  display: block;
+}
+.video-modal .backdrop {
+  position: fixed;
+  inset: 0;
+  background: #40403F;
+  opacity: 0.5;
+  width: 100vw;
+  height: 100vh;
+  cursor: pointer;
+}
+.video-modal .close-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  position: fixed;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .hero-video {
-  display: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  max-height: 100%;
-  max-width: 100%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: 6;
-  object-fit: cover;
-}
-.hero-video.active {
   display: block;
+  object-fit: cover;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(90vw, 1000px);
+  height: auto;
 }
 
 .aside-bg {
@@ -12034,12 +12072,8 @@ main {
   overflow-x: auto;
   padding-bottom: 6px;
   z-index: 1;
-  cursor: pointer;
   scrollbar-width: auto;
   scrollbar-color: #D1B362;
-}
-.fanshop-grid.active {
-  cursor: grab;
 }
 .fanshop-grid::-webkit-scrollbar {
   height: 5px;
@@ -12304,12 +12338,8 @@ main {
   overflow-x: auto;
   padding-bottom: 6px;
   z-index: 1;
-  cursor: pointer;
   scrollbar-width: auto;
   scrollbar-color: #D1B362;
-}
-.identity-photos-grid.active {
-  cursor: grab;
 }
 .identity-photos-grid::-webkit-scrollbar {
   height: 5px;
@@ -12412,6 +12442,7 @@ main {
 .logo-reveal-video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 @media (min-width: 1200px) {
@@ -12476,6 +12507,10 @@ main {
 .jersey-img, .jersey-img-mobile {
   display: none;
 }
+.jersey-img img, .jersey-img-mobile img {
+  width: 250px;
+  height: auto;
+}
 .jersey-img.active, .jersey-img-mobile.active {
   display: block;
 }
@@ -12534,9 +12569,15 @@ main {
 
 .jersey-date {
   display: none;
+  min-width: 153px;
 }
 .jersey-date.active {
   display: block;
+}
+@media (min-width: 768px) {
+  .jersey-date {
+    min-width: 230px;
+  }
 }
 
 .jersey-desc {

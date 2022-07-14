@@ -55,6 +55,11 @@
 .jersey-img, .jersey-img-mobile {
     display: none;
 
+    img {
+        width: 250px;
+        height: auto;
+    }
+
     &.active {
         display: block;
     }
@@ -114,9 +119,14 @@
 
 .jersey-date {
     display: none;
+    min-width: 153px;
 
     &.active {
         display: block;
+    }
+
+    @include media-breakpoint-up(md) {
+        min-width: 230px;
     }
 }
 

@@ -59,35 +59,6 @@ function accordionHandler() {
   );
 }
 
-function dragToScroll(container) {
-  const slider = document.querySelector(container);
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  slider.addEventListener("mousedown", (e) => {
-    isDown = true;
-    slider.classList.add("active");
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  });
-  slider.addEventListener("mouseleave", () => {
-    isDown = false;
-    slider.classList.remove("active");
-  });
-  slider.addEventListener("mouseup", () => {
-    isDown = false;
-    slider.classList.remove("active");
-  });
-  slider.addEventListener("mousemove", (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 3; //scroll-fast
-    slider.scrollLeft = scrollLeft - walk;
-  });
-}
-
 function jerseyCarouselHandler() {
   // const images = document.querySelectorAll(".jersey-img");
   // const texts = document.querySelectorAll(".jersey-desc");
@@ -161,6 +132,10 @@ function showDate(index) {
 function heroVideoHandler() {
   const playBtn = document.querySelector(".play-btn");
   const video = document.querySelector(".hero-video");
+  const videoModal = document.querySelector(".video-modal");
+  const body = document.querySelector("body");
+  const backdrop = document.querySelector(".backdrop");
+  const closeBtn = document.querySelector(".close-btn");
 
   const source = document.createElement("source");
 
@@ -168,13 +143,25 @@ function heroVideoHandler() {
     source.setAttribute("src", "../images/hvezda.mp4");
     video.appendChild(source);
     video.play();
-    video.classList.add("active");
+    videoModal.classList.add("active");
+    body.classList.toggle("overflow");
   });
+
+  backdrop.addEventListener("click", () =>
+    closeVideoModal(videoModal, video, body)
+  );
+  closeBtn.addEventListener("click", () =>
+    closeVideoModal(videoModal, video, body)
+  );
+}
+
+function closeVideoModal(videoModal, video, body) {
+  body.classList.remove("overflow");
+  videoModal.classList.remove("active");
+  video.pause();
 }
 
 menuHandler();
 accordionHandler();
-dragToScroll(".fanshop-grid");
-dragToScroll(".identity-photos-grid");
 jerseyCarouselHandler();
 heroVideoHandler();
