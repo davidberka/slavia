@@ -157,6 +157,19 @@ function closeVideoModal(videoModal, video, body) {
   video.removeAttribute("src");
 }
 
+function share(i) {
+  const wSize = "width=600,height=600";
+  const loc = encodeURIComponent(window.location.href);
+  const title = "Sdílet";
+
+  const fb = "https://www.facebook.com/sharer/sharer.php?u=";
+  const tw = "https://twitter.com/share?url=";
+
+  const url = [fb, tw];
+
+  window.open(url[i] + loc, title, wSize);
+}
+
 menuHandler();
 accordionHandler();
 jerseyCarouselHandler();
